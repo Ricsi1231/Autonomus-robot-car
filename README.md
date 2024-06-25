@@ -7,5 +7,3 @@ As a result of this work, a four-wheeled mobile robot has been realized in pract
 We can switch between the robot's programs using a push button, so there is no need to upload a different program to the microcontroller each time we want to change the program. The robot has four programs: Bluetooth control, autonomous mode, line-following mode, and voice control.
 
 The documentation presents the robot's operating principle, the software's operating principle, the circuit diagram and printed circuit board (PCB) layout of the interface card, the placement diagram, and, not least, the operating principle of the components.
-
-![alt text](https://github.com/[Ricsi1231]/[Autonomus-robot-car]/blob/[branch]/robot.jpg?raw=true)
