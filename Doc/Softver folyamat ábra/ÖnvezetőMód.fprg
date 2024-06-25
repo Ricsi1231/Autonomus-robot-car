@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ricsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-28 05:04:19 pm"/>
+        <attribute name="created" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA0OjQ1OjE0IHBtOzI1MzQ="/>
+        <attribute name="edited" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA1OjA0OjE5IHBtOzQ7MjY0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#214;nvezet&#337; M&#243;d"/>
+            <input variable="T&#225;vols&#225;g"/>
+            <if expression="t&#225;vols&#225;g&lt;15">
+                <then>
+                    <output expression="meg&#225;ll&#225;s" newline="True"/>
+                    <output expression="tolat&#225;s" newline="True"/>
+                    <output expression="ServoForgat&#225;saBalra" newline="True"/>
+                    <input variable="BalOldaliT&#225;vols&#225;g"/>
+                    <output expression="ServoForgat&#225;saJobbra" newline="True"/>
+                    <input variable="JobbOldaliT&#225;vols&#225;g"/>
+                    <if expression="JobbOldaliT&#225;vols&#225;g &gt; balOldaliT&#225;vols&#225;g">
+                        <then>
+                            <input variable="gyroscope"/>
+                            <while expression="gyroscope!=90">
+                                <output expression="Jobbra" newline="True"/>
+                            </while>
+                        </then>
+                        <else>
+                            <while expression="gyroscope!=90">
+                                <output expression="Balra" newline="True"/>
+                            </while>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="El&#337;re" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

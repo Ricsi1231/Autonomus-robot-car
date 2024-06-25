@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ricsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-28 06:43:55 pm"/>
+        <attribute name="created" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzAzOjU4OjE4IHBtOzI1NDE="/>
+        <attribute name="edited" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA2OjQzOjU1IHBtOzI7MjY0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Hang vez&#233;rl&#233;s&#13;&#10;"/>
+            <input variable="karakter"/>
+            <if expression="karakter==&quot;Move forward&quot;">
+                <then>
+                    <output expression="El&#337;reH&#225;romM&#225;sodpercig" newline="True"/>
+                    <output expression="STOP" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="karakter==&quot;Move Backward&quot;">
+                <then>
+                    <output expression="H&#225;traH&#225;romM&#225;sodpercig" newline="True"/>
+                    <output expression="STOP" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Karakter==&quot;Turn Right&quot;">
+                <then>
+                    <output expression="Jobbra" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="karakter==&quot;Turn Left&quot;">
+                <then>
+                    <output expression="Balra" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

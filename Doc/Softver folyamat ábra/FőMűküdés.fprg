@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ricsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-28 07:21:09 pm"/>
+        <attribute name="created" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA2OjUxOjU5IHBtOzI1NDI="/>
+        <attribute name="edited" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA3OjIxOjA5IHBtOzI7MjY0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="Button"/>
+            <declare name="m&#243;dv&#225;laszt&#243;" type="Integer" array="False" size=""/>
+            <comment text="Ha a gomb 500ms le volt nyomva"/>
+            <if expression="Button==&quot;HIGH&quot;">
+                <then>
+                    <output expression="m&#243;dv&#225;laszt&#243; = m&#243;dv&#225;laszt&#243; + 1" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <comment text="Ha a gomb 1500ms le volt nyomva"/>
+            <if expression="Button==&quot;HIGH&quot;">
+                <then>
+                    <if expression="m&#243;dv&#225;laszt&#243;==1">
+                        <then>
+                            <call expression="BluetoothMode&#13;&#10;"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="m&#243;dv&#225;laszt&#243;==2">
+                        <then>
+                            <call expression="&#214;nvezet&#337;M&#243;d"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="m&#243;dv&#225;laszt&#243;==3">
+                        <then>
+                            <call expression="VonalLek&#337;vet&#337;"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="m&#243;dv&#225;laszt&#243;==4">
+                        <then>
+                            <call expression="HangVez&#233;rl&#233;s"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

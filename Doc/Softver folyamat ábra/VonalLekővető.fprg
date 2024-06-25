@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ricsi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-28 05:21:27 pm"/>
+        <attribute name="created" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA1OjA0OjIyIHBtOzI1Mjk="/>
+        <attribute name="edited" value="cmljc2k7UklDU0ktODJDNzsyMDIzLTAyLTI4OzA1OjIxOjI3IHBtOzI7MjY0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Vonal lek&#337;t&#337;"/>
+            <input variable="BalOldaliSzenzor"/>
+            <input variable="JobbOldaliSzenzor"/>
+            <if expression="BalOldaliSzenzor &lt;= 35 &amp;&amp; JobbOldaliSzenzor &lt;= 35">
+                <then>
+                    <output expression="El&#337;re" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="!BalOldaliSzenzor &lt;= 35 &amp;&amp; JobbOldaliSzenzor &lt;= 35">
+                <then>
+                    <output expression="Balra" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="BalOldaliSzenzor &lt;= 35 &amp;&amp; !JobbOldaliSzenzor &lt;= 35">
+                <then>
+                    <output expression="Balra" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="!BalOldaliSzenzor &lt;= 35 &amp;&amp; !JobbOldaliSzenzor &lt;= 35">
+                <then>
+                    <output expression="Jobbra" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
